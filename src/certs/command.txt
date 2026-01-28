@@ -1,0 +1,18 @@
+openssl req -newkey rsa:2048 -new -nodes -keyout key.pem -out csr.pem
+openssl x509 -req -days 80 -in csr.pem -signkey key.pem -out server.crt
+
+
+run on port 80 http or 443 https 
+ Methode 1 :
+ Run as root 
+
+
+ Methode 2 :
+ Redirect to other port
+ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+
+
+ Methode 3 :
+ Give Normal user capability of using sockets as root
+ sudo apt-get install libcap2-bin
+ sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\`

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2>
+    
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article><h1>About the Project</h1>
+<h1>Install all dependencies in the server</h1>
+<p>Requirement: Linux OS like Debian, Ubuntu, ...</p>
+<h3>Install database</h3>
+<ol>
+<li>Install Postgres</li>
+</ol>
+<pre class="prettyprint source lang-bash"><code>sudo apt install postgresql
+</code></pre>
+<ol start="2">
+<li>Configuration
+By default only connections from the local system are allowed, to enable all other computers to connect to the PostgreSQL server, edit the file  <code>/etc/postgresql/*/main/postgresql.conf </code>. Locate the line:  <code>listen_addresses = ‘localhost’</code> and change it to <code>listen_addresses = '*' </code>.
+Now that we can connect to our PostgreSQL server, the next step is to set a password for the postgres user. Run the following command at a terminal prompt to connect to the default PostgreSQL template database:</li>
+</ol>
+<pre class="prettyprint source lang-bash"><code>sudo -u postgres psql template1
+</code></pre>
+<p>The above command connects to PostgreSQL database template1 as user postgres. Once you connect to the PostgreSQL server, you will be at an SQL prompt. You can run the following SQL command at the psql prompt to configure the password for the user postgres.</p>
+<pre class="prettyprint source lang-sql"><code>ALTER USER postgres WITH ENCRYPTED PASSWORD 'your_password';
+</code></pre>
+<ol start="3">
+<li>Create User and database</li>
+</ol>
+<pre class="prettyprint source lang-sql"><code>CREATE USER gri WITH ENCRYPTED PASSWORD 'gri';
+CREATE DATABASE armp WITH OWNER = gri;
+GRANT ALL PRIVILEGES ON DATABASE armp TO gri;
+</code></pre>
+<pre class="prettyprint source lang-bash"><code>psql -U gri -d armp
+</code></pre>
+<pre class="prettyprint source lang-sql"><code>ALTER SCHEMA public RENAME TO gri;
+</code></pre>
+<p>After configuring the password, edit the file  <code>/etc/postgresql/*/main/pg_hba.conf </code> to use scram-sha-256 authentication with the postgres user, allowed for the template1 database, from any system in the local network (which in the example is 192.168.200/1/24) :</p>
+<pre class="prettyprint source lang-sh"><code># host      DATABASE        USER            ADDRESS                 METHOD          [OPTIONS]
+hostssl     template1       postgres        192.168.200.1/24        scram-sha-256
+hostssl     armp            gri             192.168.200.1/24         md5
+</code></pre>
+<blockquote>
+<p>NOTE
+The config statement ‘hostssl’ used here will reject tcp connections that would not use ssl. Postgresql in Ubuntu has the ssl feature built in and configured by default, so it works right away. On your postgresql server this uses the certificate created by ‘ssl-cert’ package which is great, but for production use you should consider updating that with a proper certificate from a recognized CA. You can allow all connection by changing the address <code>0.0.0.0/0</code>
+Replace database 'all' by 'armp', to show only the database 'armp' to 'gri'.</p>
+</blockquote>
+<pre class="prettyprint source lang-bash"><code>sudo systemctl restart postgresql.service
+</code></pre>
+<p>Then connect to database armp with user gri;</p>
+<pre class="prettyprint source lang-bash"><code>psql -U gri -d armp
+</code></pre>
+<p>Modify the public schema to gri</p>
+<pre class="prettyprint source lang-sql"><code>ALTER SCHEMA public RENAME TO gri;
+</code></pre>
+<h3>Install NodeJs LTS latest</h3>
+<p>We can not install the latest nodejs Long Terme Support  with apt without using ppa repo, and using <strong>apt show nodejs</strong> has a Version: 12.22.9~dfsg-1ubuntu3.4 and the latest LTS is v20.12. So there multiple methode to install nodejs :</p>
+<ol>
+<li>Methode 1 : Install with path (easy to uninstall)</li>
+</ol>
+<ul>
+<li>Download NodeJs Linux Binaries ( <strong>tar.xz</strong> x64, not a source code tar.gz file) from <a href="https://nodejs.org/en/download"><code>https://nodejs.org/en/download</code></a></li>
+</ul>
+<pre class="prettyprint source lang-bash"><code>sudo mkdir /usr/local/nodejs
+</code></pre>
+<ul>
+<li>Extract node-v20.12.2-linux-x64.tar.xz to /usr/local/nodejs</li>
+</ul>
+<pre class="prettyprint source lang-bash"><code>sudo tar --strip-components 1 -xvf node-v20.12.2-linux-x64.tar.xz --directory /usr/local/nodejs
+</code></pre>
+<ul>
+<li>Add to nodejs to PATH: export PATH=$PATH:/usr/local/nodejs/bin</li>
+</ul>
+<ol start="2">
+<li>Methode 2 : Install withow path</li>
+</ol>
+<pre class="prettyprint source lang-bash"><code>sudo tar --strip-components 1 -xvf node-v20.12.2-linux-x64.tar.xz --directory /usr/local/
+</code></pre>
+<ol start="3">
+<li>Methode 3 : with Node Version Manager</li>
+</ol>
+<pre class="prettyprint source lang-bash"><code># installs NVM (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# download and install Node.js
+nvm install 20
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.12.2`
+
+# verifies the right NPM version is in the environment
+npm -v # should print `10.5.0`
+</code></pre>
+<h3>Install Nmap</h3>
+<pre class="prettyprint source lang-bash"><code>sudo apt-get install nmap
+</code></pre>
+<h3>install nbtscan to scan window os in the network</h3>
+<pre class="prettyprint source lang-bash"><code>sudo apt-get install nbtscan
+</code></pre>
+<h3>Install arp-scan to get all mac address in the network</h3>
+<pre class="prettyprint source lang-bash"><code>sudo apt install arp-scan
+#Get location of 
+whereis arp-scan
+# arp-scan: /usr/sbin/arp-scan /usr/share/arp-scan /usr/share/man/man1/arp-scan.1.gz
+</code></pre>
+<h1>Fix permission</h1>
+<pre class="prettyprint source lang-bash"><code># Set capability to use RAW and PACKET sockets; 
+setcap 'cap_net_raw=ep' /usr/sbin/arp-scan
+# Set capability to nodejs port under 1000 (include port 443 https and port 80 http)
+sudo setcap 'cap_net_bind_service=+ep' $(readlink -f $(which node))
+</code></pre>
+<h1>Structure du projet</h1>
+<pre class="prettyprint source"><code>GRI/
+├── GRI_BACK/
+│    ├── docs
+│    ├── log
+│    ├── node_modulules
+│    ├── .env
+│    ├── .env.exemple
+│    ├── package-lock.json
+│    ├── package.json
+│    ├── README.md
+│    ├── script.sh
+│    └── server.js
+└── GRI_FRONT/
+    ├── build
+    ├── docs
+    ├── node_modulules
+    ├── public
+    ├── src/
+    ├── package.json
+    ├── package-lock.json
+    └── README.md
+</code></pre>
+<pre><code>projet/ est le dossier racine du projet.
+├── indique un fichier ou un dossier au même niveau que le dossier parent.
+└── indique le dernier fichier ou dossier au même niveau que le dossier parent.
+│   indique un décalage pour les fichiers ou dossiers imbriqués.
+</code></pre>
+<h2>Setup backend</h2>
+<p>Clone the project</p>
+<pre class="prettyprint source lang-bash"><code>git clone http://154.126.75.194:3219/armp/GRI_BACK.git
+</code></pre>
+<p>Go to the project directory</p>
+<pre class="prettyprint source lang-bash"><code>  cd GRI_BACK
+</code></pre>
+<p>Change or copy this file name .env.exemple to  .env</p>
+<pre class="prettyprint source lang-bash"><code>  cp .env.exemple .env
+</code></pre>
+<p>Edit the .env according to your environment</p>
+<pre class="prettyprint source lang-bash"><code>  nano .env
+</code></pre>
+<p>Install dependencies</p>
+<pre class="prettyprint source lang-bash"><code>npm install
+</code></pre>
+<p>Install the database structure</p>
+<pre class="prettyprint source lang-bash"><code># Install database
+npm run db:install
+# Install initial data (module name,page name,component name and user admin gri)
+npm db:initial-data
+# DEV only: Install data teste (post, comment, ...)
+npm run db:data-test
+# DEV only: Install 60 fake users (post, comment, ...)
+npm run generete:fakeUsers
+# To show more command.s 
+npm run help
+</code></pre>
+<h2>Setup frontend</h2>
+<pre class="prettyprint source lang-bash"><code>#Clone the project
+git clone http://154.126.75.194:3219/armp/GRI_FRONT.git
+cd GRI_FRONT
+npm install
+</code></pre>
+<p>change apiUrl config to loaclhost in this : <code>src/frontend/src/Route/Route.js</code> to solve CROSORIGIN ERROR.</p>
+<p>To run build</p>
+<pre class="prettyprint source lang-bash"><code># Remove previous build if existe
+rm -rf build/*
+# Run the build
+npm run build
+</code></pre>
+<p>This command run the build project to /GRI_FRONT/Build,
+the /GRI_FRONT/Build is the static file of server.
+Make sur to delete the build folder before run the build command.</p>
+<h2>start server</h2>
+<p>npm run start</p>
+<h1>Deploy the apps</h1>
+<h2>Install the web and scan service</h2>
+<pre class="prettyprint source lang-bash"><code>cd GRI_BACK
+#Edit the .env file and change APP_PORT=443
+nano .env 
+#Edit the path of the script.sh and the user in the file service
+nano services/systemd/gri_scan.service
+nano services/systemd/gri_web.service
+# Copy the service
+cp services/systemd/gri_scan.service /etc/systemd/system/gri_scan.service
+cp services/systemd/gri_web.service /etc/systemd/system/gri_web.service 
+# Reload daemon
+systemctl daemon-reload
+# Start all service
+systemctl start  gri_scan.service
+systemctl start  gri_web.service
+
+# Enable on boot
+systemctl enable  gri_scan.service
+systemctl enable  gri_web.service
+
+
+# Run the build
+cd ../GRI_FRONT
+npm run build
+
+# The GRI_FRONT/build folder is the static file of the server
+</code></pre></article>
+    </section>
+
+
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Wed Jan 03 2046 15:26:51 GMT+0300 (heure normale d’Afrique de l’Est) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

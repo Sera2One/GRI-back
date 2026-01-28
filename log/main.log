@@ -1,0 +1,1483 @@
+Démarrage du serveur web...
+App is listening on port 4000
+[0mGET /test3 [32m200[0m 36.715 ms - 1543[0m
+[0mGET /simple-peer/socket.io.js [32m200[0m 48.133 ms - 134766[0m
+[0mGET /js/main.js [32m200[0m 55.803 ms - 7141[0m
+[0mGET /simple-peer/simplepeer.min.js [32m200[0m 99.579 ms - 99448[0m
+[0mGET /favicon.ico [32m200[0m 37.006 ms - 662[0m
+[0mGET / [32m200[0m 3.076 ms - 662[0m
+[0mGET /css/style.css [32m200[0m 2.015 ms - 473[0m
+[0mGET /4acf0bdef758653e7817.bundle.js [36m304[0m 2.927 ms - -[0m
+[0mGET /Images/logo192.png [32m200[0m 32.315 ms - 5347[0m
+[0mGET /Images/logoarmptranspARMP.gif [32m200[0m 51.962 ms - 5795[0m
+Démarrage du serveur web...
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EACCES: permission denied 0.0.0.0:443
+    at Server.setupListenHandle [as _listen2] (node:net:1880:21)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at file:///mnt/000F3804000903B2/Projet/Documents/GR/GRI_BACK/server.js:91:12
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1924:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EACCES',
+  errno: -13,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 443
+}
+
+Node.js v20.12.2
+Terminé.
+Démarrage du serveur web...
+App is listening on port 443
+[0mGET / [32m200[0m 7.632 ms - 662[0m
+[0mGET /css/style.css [32m200[0m 5.779 ms - 473[0m
+[0mGET /4acf0bdef758653e7817.bundle.js [32m200[0m 26.791 ms - 840435[0m
+[0mGET /Images/logo192.png [32m200[0m 3.530 ms - 5347[0m
+[0mGET /Images/logoarmptranspARMP.gif [32m200[0m 3.023 ms - 5795[0m
+Démarrage du serveur web...
+App is listening on port 4000
+a client is connected
+a client is connected
+sending init receive to JAnRWecQkIMTNeJAAAAD
+sera0 sera1234
+undefined
+[0mPOST /api/login [32m200[0m 286.365 ms - 726[0m
+[0mGET /api/post [0m-[0m - ms - -[0m
+{}
+[0mGET /api/users [0m-[0m - ms - -[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 140.972 ms - 9840[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 138.292 ms - 9840[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 78.204 ms - 9840[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 77.276 ms - 9840[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 64.858 ms - 9840[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 56.935 ms - 9840[0m
+data2 {
+  destCodeListe: [ { destCode: 'user-31' } ],
+  usrCode: 'user-1',
+  msgContenu: 'test',
+  msgPieceJoint: null,
+  msgCreatedDate: null,
+  msgModifDate: null
+}
+res {
+  error: "Les utilisateur suivant n'existe pas dans la base de donnée",
+  destCodeListe: []
+}
+oksoaqksasma []
+[0mGET /api/messages?destination_code=user-31&sender_code=user-1&page=1 [32m200[0m 68.345 ms - 166[0m
+oksoaqksasma [
+  Destination {
+    dataValues: {
+      msg_code: 'msg-1',
+      dest_code: 'user-2',
+      sender_code: 'user-1',
+      dest_is_readed: true,
+      dest_is_deleted: false,
+      dest_created_date: null,
+      dest_modif_date: null,
+      usrCodeUser: [Users],
+      msgCodeMessage: [Messages]
+    },
+    _previousDataValues: {
+      msg_code: 'msg-1',
+      dest_code: 'user-2',
+      sender_code: 'user-1',
+      dest_is_readed: true,
+      dest_is_deleted: false,
+      dest_created_date: null,
+      dest_modif_date: null,
+      usrCodeUser: [Users],
+      msgCodeMessage: [Messages]
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: 'gri',
+      _schemaDelimiter: '',
+      include: [Array],
+      includeNames: [Array],
+      includeMap: [Object],
+      includeValidated: true,
+      attributes: [Array],
+      raw: true
+    },
+    isNewRecord: false,
+    usrCodeUser: Users {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: [Object],
+      isNewRecord: false
+    },
+    msgCodeMessage: Messages {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: [Object],
+      isNewRecord: false
+    }
+  }
+]
+[0mGET /api/messages?destination_code=user-2&sender_code=user-1&page=1 [32m200[0m 37.049 ms - 646[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 40.521 ms - 9840[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 24.953 ms - 9840[0m
+data2 {
+  destCodeListe: [ { destCode: 'user-2' } ],
+  usrCode: 'user-1',
+  msgContenu: 'ggg',
+  msgPieceJoint: null,
+  msgCreatedDate: null,
+  msgModifDate: null
+}
+res {
+  error: "Les utilisateur suivant n'existe pas dans la base de donnée",
+  destCodeListe: []
+}
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 50.428 ms - 100[0m
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 25.884 ms - 91[0m
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 26.171 ms - 91[0m
+Démarrage du serveur web...
+App is listening on port 4000
+a client is connected
+a client is connected
+sending init receive to XfItyq--kA8P6w5QAAAD
+findUserMissing []
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 38.014 ms - 91[0m
+findUserMissing []
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 48.417 ms - 91[0m
+findUserMissing []
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 32.198 ms - 91[0m
+findUserMissing [ 'user-6' ]
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 32.750 ms - 99[0m
+findUserMissing [ 'user-777' ]
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 29.361 ms - 101[0m
+Démarrage du serveur web...
+App is listening on port 4000
+a client is connected
+a client is connected
+sending init receive to XF02dSAPz9qhqyXQAAAD
+findUserMissing [ 'user-777' ]
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [33m400[0m 35.536 ms - 101[0m
+findUserMissing []
+ReferenceError: io is not defined
+    at postMessage (file:///mnt/000F3804000903B2/Projet/Documents/GR/GRI_BACK/src/controller/message/messageController.js:119:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+node:_http_outgoing:659
+    throw new ERR_HTTP_HEADERS_SENT('set');
+          ^
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (node:_http_outgoing:659:11)
+    at ServerResponse.header (/mnt/000F3804000903B2/Projet/Documents/GR/GRI_BACK/node_modules/express/lib/response.js:795:10)
+    at ServerResponse.send (/mnt/000F3804000903B2/Projet/Documents/GR/GRI_BACK/node_modules/express/lib/response.js:175:12)
+    at ServerResponse.json (/mnt/000F3804000903B2/Projet/Documents/GR/GRI_BACK/node_modules/express/lib/response.js:279:15)
+    at postMessage (file:///mnt/000F3804000903B2/Projet/Documents/GR/GRI_BACK/src/controller/message/messageController.js:124:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+
+Node.js v20.12.2
+Terminé.
+Démarrage du serveur web...
+App is listening on port 4000
+a client is connected
+a client is connected
+sending init receive to tfkaGBQKitLRbJgyAAAD
+findUserMissing []
+[0mPOST /api/messages?destination_code=user-22&sender_code=user-1&contact_liste=true [32m200[0m 89.925 ms - 773[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 54.610 ms - 9930[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 50.779 ms - 9930[0m
+data2 {
+  destCodeListe: [ { destCode: 'user-2' } ],
+  usrCode: 'user-1',
+  msgContenu: 'test',
+  msgPieceJoint: null,
+  msgCreatedDate: null,
+  msgModifDate: null
+}
+res {
+  error: "Les utilisateur suivant n'existe pas dans la base de donnée",
+  destCodeListe: []
+}
+Démarrage du serveur web...
+App is listening on port 4000
+a client is connected
+a client is connected
+sending init receive to cPPJDPdKgLCzpQHmAAAD
+data2 {
+  destCodeListe: [ { destCode: 'user-2' } ],
+  usrCode: 'user-1',
+  msgContenu: 'test',
+  msgPieceJoint: null,
+  msgCreatedDate: null,
+  msgModifDate: null
+}
+res {
+  message: 'Message envoyé.',
+  newMessage: Messages {
+    dataValues: {
+      msgCode: 'msg-22',
+      usrCode: 'user-1',
+      msgContenu: 'test',
+      msgPieceJoint: null,
+      msgCreatedDate: 2024-04-17T16:21:19.000Z,
+      msgIsDeleted: false,
+      msgModifDate: null,
+      msgModif: null
+    },
+    _previousDataValues: {
+      msgCode: 'msg-22',
+      usrCode: 'user-1',
+      msgContenu: 'test',
+      msgPieceJoint: null,
+      msgCreatedDate: 2024-04-17T16:21:19.000Z,
+      msgIsDeleted: false,
+      msgModifDate: null,
+      msgModif: null
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: true,
+      _schema: 'gri',
+      _schemaDelimiter: '',
+      attributes: undefined,
+      include: undefined,
+      raw: undefined,
+      silent: undefined
+    },
+    isNewRecord: false
+  },
+  saveStatus: [
+    Destination {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: [Object],
+      isNewRecord: false
+    }
+  ]
+}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 103.068 ms - 9930[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 93.061 ms - 9930[0m
+data2 {
+  destCodeListe: [ { destCode: 'user-2' } ],
+  usrCode: 'user-1',
+  msgContenu: 'bong',
+  msgPieceJoint: null,
+  msgCreatedDate: null,
+  msgModifDate: null
+}
+res {
+  message: 'Message envoyé.',
+  newMessage: Messages {
+    dataValues: {
+      msgCode: 'msg-23',
+      usrCode: 'user-1',
+      msgContenu: 'bong',
+      msgPieceJoint: null,
+      msgCreatedDate: 2024-04-17T16:27:41.000Z,
+      msgIsDeleted: false,
+      msgModifDate: null,
+      msgModif: null
+    },
+    _previousDataValues: {
+      msgCode: 'msg-23',
+      usrCode: 'user-1',
+      msgContenu: 'bong',
+      msgPieceJoint: null,
+      msgCreatedDate: 2024-04-17T16:27:41.000Z,
+      msgIsDeleted: false,
+      msgModifDate: null,
+      msgModif: null
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: true,
+      _schema: 'gri',
+      _schemaDelimiter: '',
+      attributes: undefined,
+      include: undefined,
+      raw: undefined,
+      silent: undefined
+    },
+    isNewRecord: false
+  },
+  saveStatus: [
+    Destination {
+      dataValues: [Object],
+      _previousDataValues: [Object],
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: [Object],
+      isNewRecord: false
+    }
+  ]
+}
+[0mGET /api/refresh-token [32m200[0m 11.113 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 13.800 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.039 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 17.552 ms - 36[0m
+socket disconnected cPPJDPdKgLCzpQHmAAAD
+socket disconnected qCZoJscAnEbl0vDcAAAB
+{}
+[0mGET /api/users [32m200[0m 116.539 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 128.921 ms - 9928[0m
+[0mGET /api/users [32m200[0m 74.788 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 84.283 ms - 9928[0m
+a client is connected
+a client is connected
+sending init receive to erBvbFaV0yyJnUEFAAAH
+[0mGET /api/refresh-token [32m200[0m 6.757 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 10.494 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.391 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.996 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.376 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 12.975 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.267 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.357 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.623 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.302 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 119.756 ms - 27199[0m
+[0mGET /api/users [32m200[0m 142.043 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 195.201 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 195.686 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 6.490 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 11.976 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 54.091 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 69.958 ms - 9928[0m
+[0mGET /api/users [32m200[0m 36.016 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 23.604 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 24.107 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 25.071 ms - 9928[0m
+a client is connected
+sending init receive to F_r4qEht8JisbaLrAAAJ
+sending init receive to F_r4qEht8JisbaLrAAAJ
+[0mGET /api/refresh-token [32m200[0m 5.663 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.355 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.231 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.658 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.450 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.561 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.661 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.570 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 12.731 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 10.546 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.001 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.814 ms - 36[0m
+a client is connected
+sending init receive to uZTJMA4MkSmT9KcEAAAL
+sending init receive to uZTJMA4MkSmT9KcEAAAL
+sending init receive to uZTJMA4MkSmT9KcEAAAL
+{}
+[0mGET /api/users [32m200[0m 80.011 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 39.981 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 64.577 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 61.495 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 25.837 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 40.884 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 14.537 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 23.041 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 4.437 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.708 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.483 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.457 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.082 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.721 ms - 36[0m
+a client is connected
+sending init receive to jgwfPw6xbH-g6zqZAAAN
+sending init receive to jgwfPw6xbH-g6zqZAAAN
+sending init receive to jgwfPw6xbH-g6zqZAAAN
+sending init receive to jgwfPw6xbH-g6zqZAAAN
+{}
+[0mGET /api/users [32m200[0m 78.907 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 67.281 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 108.398 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 119.062 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 21.998 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 39.093 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 16.113 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 28.599 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 17.709 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 32.437 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 4.618 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.703 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.886 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.335 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.468 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.927 ms - 36[0m
+a client is connected
+sending init receive to _E4mEblF6vKuzOu7AAAP
+sending init receive to _E4mEblF6vKuzOu7AAAP
+sending init receive to _E4mEblF6vKuzOu7AAAP
+sending init receive to _E4mEblF6vKuzOu7AAAP
+sending init receive to _E4mEblF6vKuzOu7AAAP
+{}
+[0mGET /api/users [32m200[0m 75.150 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 113.477 ms - 9928[0m
+[0mGET /api/users [32m200[0m 61.105 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 91.557 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 26.809 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 33.446 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 13.700 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 20.636 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 13.836 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 23.020 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 22.817 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 14.857 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 4.029 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.429 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.177 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.465 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.885 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.949 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.960 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.085 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.010 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.145 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.555 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.871 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.596 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.162 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.508 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.390 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.184 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.304 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.254 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.584 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.877 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.073 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.180 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.828 ms - 36[0m
+a client is connected
+sending init receive to vNKUhIvsHXxdL0cUAAAR
+sending init receive to vNKUhIvsHXxdL0cUAAAR
+sending init receive to vNKUhIvsHXxdL0cUAAAR
+sending init receive to vNKUhIvsHXxdL0cUAAAR
+sending init receive to vNKUhIvsHXxdL0cUAAAR
+sending init receive to vNKUhIvsHXxdL0cUAAAR
+{}
+[0mGET /api/users [32m200[0m 53.302 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 63.018 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 48.023 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 53.098 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 16.707 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 37.188 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 12.112 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 20.782 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 15.073 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 27.562 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 12.560 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.146 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.262 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.393 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.915 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.834 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.191 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.856 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.402 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.555 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.325 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.441 ms - 36[0m
+[0mGET /api/comments?post_code=post-1&limit=5&page=1 [0m-[0m - ms - -[0m
+[0mGET /api/refresh-token [32m200[0m 7.807 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.915 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.295 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.371 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.828 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.443 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.470 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.301 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.145 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.406 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.795 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.490 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.268 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.105 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.629 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.820 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.564 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.912 ms - 36[0m
+log [
+  {
+    cmtCode: 'cmt-15',
+    usrCode: 'user-1',
+    postCode: 'post-1',
+    useUsrCode: null,
+    cmtContent: 'test 22',
+    cmtModif: null,
+    cmtIsDeletedByOther: null,
+    cmtCreatedDate: 2024-04-08T06:50:21.000Z,
+    cmtModifDate: null
+  },
+  {
+    cmtCode: 'cmt-14',
+    usrCode: 'user-1',
+    postCode: 'post-1',
+    useUsrCode: null,
+    cmtContent: 'laaa',
+    cmtModif: null,
+    cmtIsDeletedByOther: null,
+    cmtCreatedDate: 2024-04-08T06:24:26.000Z,
+    cmtModifDate: null
+  },
+  {
+    cmtCode: 'cmt-13',
+    usrCode: 'user-1',
+    postCode: 'post-1',
+    useUsrCode: null,
+    cmtContent: 'olll',
+    cmtModif: null,
+    cmtIsDeletedByOther: null,
+    cmtCreatedDate: 2024-04-08T06:16:31.000Z,
+    cmtModifDate: null
+  },
+  {
+    cmtCode: 'cmt-12',
+    usrCode: 'user-1',
+    postCode: 'post-1',
+    useUsrCode: null,
+    cmtContent: 'Lose',
+    cmtModif: null,
+    cmtIsDeletedByOther: null,
+    cmtCreatedDate: 2024-04-08T06:15:28.000Z,
+    cmtModifDate: null
+  },
+  {
+    cmtCode: 'cmt-11',
+    usrCode: 'user-1',
+    postCode: 'post-1',
+    useUsrCode: null,
+    cmtContent: 'ok',
+    cmtModif: null,
+    cmtIsDeletedByOther: null,
+    cmtCreatedDate: 2024-04-08T06:15:17.000Z,
+    cmtModifDate: null
+  }
+]
+[0mPOST /api/comments [32m200[0m 72.574 ms - 274[0m
+[0mPOST /api/comments [33m400[0m 14.273 ms - 47[0m
+[0mPOST /api/comments [33m400[0m 2.233 ms - 47[0m
+[0mGET /api/refresh-token [32m200[0m 3.646 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.352 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.170 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.995 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.517 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.883 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.940 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.204 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.190 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.640 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.675 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.700 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.411 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.181 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.752 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.044 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.962 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 10.461 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.447 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.123 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.841 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.886 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.873 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.131 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.379 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.000 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.895 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.264 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.302 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.425 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.305 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.686 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.062 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.084 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.187 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.300 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.656 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.115 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.148 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.815 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.790 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.424 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.044 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.330 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.912 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.850 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.897 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 13.064 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.221 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.164 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.259 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.023 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.480 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.187 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.913 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.129 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.863 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.947 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.148 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.738 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.249 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.847 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.394 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.116 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.520 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.884 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.951 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.837 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.427 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.287 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.354 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.342 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 70.017 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 86.269 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 24.848 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 50.211 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 5.809 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.316 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.650 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.495 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.365 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.169 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.536 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.136 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.337 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 11.780 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.578 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.525 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.516 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.599 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.365 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 13.972 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.711 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.555 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.882 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.751 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.019 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.585 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.157 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.313 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.428 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.191 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.914 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.119 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.760 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.071 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.377 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.110 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.236 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.991 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.490 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.992 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.592 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.032 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.242 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.870 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.460 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.333 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.331 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.641 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.152 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.450 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.908 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.435 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.159 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.491 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.448 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.749 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.321 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.842 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.214 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.818 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.247 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.437 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.288 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.726 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.834 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.713 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.211 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.080 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.365 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.549 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.543 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.609 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.909 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.183 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 55.996 ms - 27199[0m
+[0mGET /api/users [32m200[0m 65.644 ms - 27199[0m
+[0mGET /api/refresh-token [32m200[0m 3.236 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.214 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 29.441 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 32.817 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 23.251 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 27.486 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 4.426 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.007 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.829 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.848 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 60.678 ms - 27199[0m
+[0mGET /api/users [32m200[0m 76.664 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 35.828 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 41.388 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 19.134 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 42.413 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 19.568 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 22.147 ms - 27199[0m
+[0mGET /api/refresh-token [32m200[0m 5.816 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.904 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 31.409 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 66.606 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 30.215 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 38.865 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 24.911 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 37.302 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 20.907 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 18.003 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 23.177 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 46.551 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 4.541 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.123 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.030 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.989 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.977 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.638 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.144 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.968 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.091 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.299 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.503 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.805 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.609 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.198 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.684 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.384 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.342 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.648 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.403 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.939 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.431 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.642 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.225 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.495 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.126 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.640 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.030 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.585 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.160 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.478 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.394 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.710 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.633 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.144 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.505 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.971 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.441 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.518 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.191 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.118 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.322 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.238 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.113 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.386 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.327 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.386 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.245 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.602 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.212 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.145 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.016 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 10.680 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.241 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.801 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.629 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.210 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.270 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.270 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.824 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.411 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.074 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.177 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.947 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.052 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.357 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.175 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.148 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.087 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.398 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.261 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.432 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.641 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.776 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.707 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.121 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.836 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.622 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.282 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.985 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.163 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.170 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 10.193 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.410 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.056 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.471 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.325 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.882 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.133 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 52.934 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 65.133 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 24.337 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 28.987 ms - 9928[0m
+a client is connected
+sending init receive to SdmopFtWhB-nGGDLAAAT
+sending init receive to SdmopFtWhB-nGGDLAAAT
+sending init receive to SdmopFtWhB-nGGDLAAAT
+sending init receive to SdmopFtWhB-nGGDLAAAT
+sending init receive to SdmopFtWhB-nGGDLAAAT
+sending init receive to SdmopFtWhB-nGGDLAAAT
+sending init receive to SdmopFtWhB-nGGDLAAAT
+{}
+[0mGET /api/users [32m200[0m 34.677 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 29.276 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 40.227 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 24.651 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 5.341 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.931 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.450 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.547 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.540 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.273 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.927 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.553 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.137 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.643 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.727 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.336 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 63.905 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 62.510 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 27.279 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 34.360 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 14.171 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 23.675 ms - 9928[0m
+a client is connected
+sending init receive to CbGShm7uokR6QvhlAAAV
+sending init receive to CbGShm7uokR6QvhlAAAV
+sending init receive to CbGShm7uokR6QvhlAAAV
+sending init receive to CbGShm7uokR6QvhlAAAV
+sending init receive to CbGShm7uokR6QvhlAAAV
+sending init receive to CbGShm7uokR6QvhlAAAV
+sending init receive to CbGShm7uokR6QvhlAAAV
+sending init receive to CbGShm7uokR6QvhlAAAV
+{}
+[0mGET /api/users [32m200[0m 16.380 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 30.941 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 49.467 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 27.668 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 6.018 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.719 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.668 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.827 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.335 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.859 ms - 36[0m
+socket disconnected F_r4qEht8JisbaLrAAAJ
+socket disconnected OO2baQmWvNcRk-xwAAAG
+socket disconnected erBvbFaV0yyJnUEFAAAH
+socket disconnected uZTJMA4MkSmT9KcEAAAL
+socket disconnected jgwfPw6xbH-g6zqZAAAN
+socket disconnected _E4mEblF6vKuzOu7AAAP
+socket disconnected vNKUhIvsHXxdL0cUAAAR
+socket disconnected SdmopFtWhB-nGGDLAAAT
+socket disconnected CbGShm7uokR6QvhlAAAV
+{}
+{}
+[0mGET /api/users [32m200[0m 86.143 ms - 27199[0m
+[0mGET /api/users [32m200[0m 107.769 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 128.583 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 114.129 ms - 9928[0m
+a client is connected
+a client is connected
+sending init receive to YqUA3S5M6U-yRAvoAAAZ
+[0mGET /api/refresh-token [32m200[0m 3.388 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.960 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.974 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.238 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.881 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.027 ms - 36[0m
+[0mGET /api/post [32m200[0m 87.906 ms - 6618[0m
+[0mGET /api/post [32m200[0m 94.001 ms - 6618[0m
+{}
+[0mGET /api/users [32m200[0m 41.490 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 65.880 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 95.697 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 74.403 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 3.615 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.303 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.383 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.121 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 106.154 ms - 27199[0m
+[0mGET /api/users [32m200[0m 107.733 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 123.578 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 163.199 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 43.601 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 59.235 ms - 9928[0m
+a client is connected
+sending init receive to IgvpnkLJUV6zl4FSAAAb
+sending init receive to IgvpnkLJUV6zl4FSAAAb
+[0mGET /api/refresh-token [32m200[0m 14.157 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.362 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.239 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.370 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.913 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.044 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.859 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.270 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.432 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.721 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.443 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.187 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 74.095 ms - 27199[0m
+[0mGET /api/users [32m200[0m 92.708 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 128.612 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 142.257 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 28.467 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 44.237 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 25.850 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 33.979 ms - 9928[0m
+a client is connected
+sending init receive to q53zGST_WOo3IN6oAAAd
+sending init receive to q53zGST_WOo3IN6oAAAd
+sending init receive to q53zGST_WOo3IN6oAAAd
+[0mGET /api/refresh-token [32m200[0m 4.669 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.550 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.248 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.576 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 11.807 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.206 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.317 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.962 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.608 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.643 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.278 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.884 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 56.272 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 52.318 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 35.941 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 44.306 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 48.936 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 77.504 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 46.045 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 64.708 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 20.399 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 19.822 ms - 9928[0m
+a client is connected
+sending init receive to nIWpL9D1DDo6YkzZAAAf
+sending init receive to nIWpL9D1DDo6YkzZAAAf
+sending init receive to nIWpL9D1DDo6YkzZAAAf
+sending init receive to nIWpL9D1DDo6YkzZAAAf
+[0mGET /api/refresh-token [32m200[0m 5.732 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.097 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.369 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.838 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.027 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 10.390 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.700 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.447 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.997 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.760 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.596 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.301 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.909 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.854 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.204 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.469 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.447 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.176 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.511 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.932 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.290 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.933 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.607 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.460 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.536 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.301 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.225 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.774 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.544 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.771 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.535 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.009 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.647 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.225 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.747 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.831 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.915 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.374 ms - 36[0m
+a client is connected
+sending init receive to VyMmAUf39lLmOVdsAAAh
+sending init receive to VyMmAUf39lLmOVdsAAAh
+sending init receive to VyMmAUf39lLmOVdsAAAh
+sending init receive to VyMmAUf39lLmOVdsAAAh
+sending init receive to VyMmAUf39lLmOVdsAAAh
+{}
+[0mGET /api/users [32m200[0m 57.785 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 71.317 ms - 9928[0m
+[0mGET /api/users [32m200[0m 57.656 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 74.579 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 23.764 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 29.204 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 30.261 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 19.275 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 10.582 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 17.056 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 16.328 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 26.251 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 4.965 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.594 ms - 36[0m
+[0mGET /api/post [32m200[0m 27.420 ms - 6618[0m
+[0mGET /api/post [32m200[0m 21.233 ms - 6618[0m
+[0mGET /api/refresh-token [32m200[0m 5.334 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.261 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 37.294 ms - 27199[0m
+[0mGET /api/users [32m200[0m 46.818 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 71.554 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 41.066 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 3.351 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.915 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.556 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.589 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.704 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.570 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 80.042 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 130.384 ms - 9928[0m
+[0mGET /api/users [32m200[0m 92.169 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 116.275 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 19.738 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 35.727 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 17.807 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 39.330 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 24.035 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 36.927 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 22.966 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 36.327 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 16.476 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 27.601 ms - 9928[0m
+a client is connected
+sending init receive to T_ja_X6Pac_KO_dnAAAj
+sending init receive to T_ja_X6Pac_KO_dnAAAj
+sending init receive to T_ja_X6Pac_KO_dnAAAj
+sending init receive to T_ja_X6Pac_KO_dnAAAj
+sending init receive to T_ja_X6Pac_KO_dnAAAj
+sending init receive to T_ja_X6Pac_KO_dnAAAj
+[0mGET /api/refresh-token [32m200[0m 3.910 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.285 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 61.028 ms - 27199[0m
+[0mGET /api/users [32m200[0m 65.534 ms - 27199[0m
+[0mGET /api/refresh-token [32m200[0m 5.531 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.172 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 21.639 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 23.007 ms - 9928[0m
+[0mGET /api/users [32m200[0m 33.386 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 18.801 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 3.752 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.686 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.134 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.361 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.885 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 10.611 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 84.506 ms - 27199[0m
+[0mGET /api/users [32m200[0m 90.794 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 125.268 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 106.040 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 21.941 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 41.394 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 16.085 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 11.566 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 31.139 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 20.182 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 17.592 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 27.149 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 10.284 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 23.082 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 16.208 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 25.669 ms - 9928[0m
+a client is connected
+sending init receive to o1C9KdZ9zi3hOMP2AAAl
+sending init receive to o1C9KdZ9zi3hOMP2AAAl
+sending init receive to o1C9KdZ9zi3hOMP2AAAl
+sending init receive to o1C9KdZ9zi3hOMP2AAAl
+sending init receive to o1C9KdZ9zi3hOMP2AAAl
+sending init receive to o1C9KdZ9zi3hOMP2AAAl
+sending init receive to o1C9KdZ9zi3hOMP2AAAl
+[0mGET /api/refresh-token [32m200[0m 7.943 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 14.237 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.660 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.340 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.014 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.085 ms - 36[0m
+{}
+{}
+[0mGET /api/users [32m200[0m 58.686 ms - 27199[0m
+[0mGET /api/users [32m200[0m 67.700 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 108.677 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 63.923 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 28.726 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 43.119 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 23.736 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 34.145 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 28.237 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 19.543 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 21.341 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 41.637 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 5.184 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.965 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 18.411 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 21.786 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 14.635 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 27.840 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 20.484 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 34.891 ms - 9928[0m
+a client is connected
+sending init receive to r04p2wWoEgsIRS_jAAAn
+sending init receive to r04p2wWoEgsIRS_jAAAn
+sending init receive to r04p2wWoEgsIRS_jAAAn
+sending init receive to r04p2wWoEgsIRS_jAAAn
+sending init receive to r04p2wWoEgsIRS_jAAAn
+sending init receive to r04p2wWoEgsIRS_jAAAn
+sending init receive to r04p2wWoEgsIRS_jAAAn
+sending init receive to r04p2wWoEgsIRS_jAAAn
+[0mGET /api/refresh-token [32m200[0m 4.306 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.939 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.038 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.942 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.548 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.860 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 45.981 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 45.399 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 21.175 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 21.634 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 18.741 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 30.754 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 20.457 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 28.997 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 36.581 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 25.539 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 22.716 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 38.327 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 17.587 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 15.982 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 15.060 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 24.668 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 22.356 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 72.528 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 12.597 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 28.077 ms - 9928[0m
+a client is connected
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+sending init receive to AcupqG-Ut3CzTBVDAAAp
+[0mGET /api/refresh-token [32m200[0m 5.351 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.350 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.941 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.939 ms - 36[0m
+socket disconnected nIWpL9D1DDo6YkzZAAAf
+socket disconnected yzeYQHxkx1Kb736XAAAY
+socket disconnected YqUA3S5M6U-yRAvoAAAZ
+socket disconnected IgvpnkLJUV6zl4FSAAAb
+socket disconnected q53zGST_WOo3IN6oAAAd
+socket disconnected VyMmAUf39lLmOVdsAAAh
+socket disconnected T_ja_X6Pac_KO_dnAAAj
+socket disconnected o1C9KdZ9zi3hOMP2AAAl
+socket disconnected r04p2wWoEgsIRS_jAAAn
+socket disconnected AcupqG-Ut3CzTBVDAAAp
+{}
+[0mGET /api/users [32m200[0m 58.163 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 123.025 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 21.870 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 17.467 ms - 27199[0m
+a client is connected
+a client is connected
+sending init receive to A-SVWgol41dP38PBAAAt
+[0mGET /api/refresh-token [32m200[0m 5.195 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.284 ms - 36[0m
+{}
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 99.191 ms - 9928[0m
+[0mGET /api/users [32m200[0m 68.423 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 122.935 ms - 9928[0m
+[0mGET /api/users [32m200[0m 75.716 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 19.794 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 24.184 ms - 9928[0m
+a client is connected
+sending init receive to msRcgi3-dHzwtWVeAAAv
+sending init receive to msRcgi3-dHzwtWVeAAAv
+[0mGET /api/refresh-token [32m200[0m 5.692 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.932 ms - 36[0m
+socket disconnected msRcgi3-dHzwtWVeAAAv
+socket disconnected BzO2klibDJy6y7z1AAAs
+socket disconnected A-SVWgol41dP38PBAAAt
+{}
+[0mGET /api/users [32m200[0m 47.016 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 44.180 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 75.788 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 82.566 ms - 9928[0m
+a client is connected
+a client is connected
+sending init receive to Q72la_A8QKueI5IwAAAz
+[0mGET /api/refresh-token [32m200[0m 5.605 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.546 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 48.596 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 57.255 ms - 9928[0m
+a client is connected
+sending init receive to JTtrJ3ai_w0rPfPiAAA1
+sending init receive to JTtrJ3ai_w0rPfPiAAA1
+{}
+[0mGET /api/users [32m200[0m 22.907 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 29.665 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 18.535 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 19.825 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 7.505 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.307 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.639 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.482 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.710 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.873 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 86.471 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 122.906 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 119.825 ms - 9928[0m
+[0mGET /api/users [32m200[0m 54.587 ms - 27199[0m
+[0mGET /api/refresh-token [32m200[0m 7.990 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.463 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.699 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.570 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.882 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 8.892 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 42.411 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 38.511 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 25.540 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 22.697 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 18.637 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 26.389 ms - 9928[0m
+a client is connected
+sending init receive to FGypm_oBjhClK8-LAAA3
+sending init receive to FGypm_oBjhClK8-LAAA3
+sending init receive to FGypm_oBjhClK8-LAAA3
+{}
+[0mGET /api/users [32m200[0m 31.415 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 54.658 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 64.693 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 24.594 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 6.824 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 16.375 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 3.571 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.389 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.154 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.680 ms - 36[0m
+socket disconnected FGypm_oBjhClK8-LAAA3
+socket disconnected lskaP0j4PdRK2gL_AAAy
+socket disconnected Q72la_A8QKueI5IwAAAz
+socket disconnected JTtrJ3ai_w0rPfPiAAA1
+{}
+[0mGET /api/users [32m200[0m 55.532 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 61.593 ms - 9928[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 24.491 ms - 9928[0m
+[0mGET /api/users [32m200[0m 24.213 ms - 27199[0m
+a client is connected
+[0mGET /api/refresh-token [32m200[0m 5.056 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.894 ms - 36[0m
+a client is connected
+sending init receive to CMS9S964Hwe3t3QWAAA7
+{}
+[0mGET /api/users [32m200[0m 62.208 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 47.209 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 68.284 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 89.733 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 6.112 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 14.436 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 6.291 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.854 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.530 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.115 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 69.271 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 83.888 ms - 9928[0m
+[0mGET /api/users [32m200[0m 35.521 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 63.274 ms - 9928[0m
+[0mGET /api/refresh-token [32m200[0m 5.999 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 20.142 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.840 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 9.833 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 31.603 ms - 27199[0m
+{}
+[0mGET /api/users [32m200[0m 18.294 ms - 27199[0m
+[0mGET /api/refresh-token [32m200[0m 5.372 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.058 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 33.543 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 70.459 ms - 9928[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 75.237 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 42.281 ms - 27199[0m
+[0mGET /api/refresh-token [32m200[0m 5.944 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.976 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 5.184 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.599 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 4.269 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 7.061 ms - 36[0m
+{}
+[0mGET /api/users [32m200[0m 85.114 ms - 27199[0m
+{}
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 71.255 ms - 9928[0m
+[0mGET /api/users [32m200[0m 63.262 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 102.497 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 46.617 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 59.094 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 18.678 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 37.498 ms - 9928[0m
+{}
+[0mGET /api/users [32m200[0m 27.336 ms - 27199[0m
+[0mGET /api/messages?sender_code=user-1&limit=20&page=1 [32m200[0m 17.314 ms - 9928[0m
+a client is connected
+sending init receive to -AOpQEYbwRxibInsAAA9
+sending init receive to -AOpQEYbwRxibInsAAA9
+[0mGET /api/refresh-token [32m200[0m 8.450 ms - 36[0m
+[0mGET /api/refresh-token [32m200[0m 10.176 ms - 36[0m
+socket disconnected zuJnodPI1w-LFw1ZAAA6
+socket disconnected CMS9S964Hwe3t3QWAAA7
+socket disconnected -AOpQEYbwRxibInsAAA9

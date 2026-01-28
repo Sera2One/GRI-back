@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="peerjs.min.js"></script>
+	</head>
+	<body>
+		<div>tesy akkana</div>
+		<script>
+            console.log('resaaa');
+            // const peer = new Peer("someid", {
+            //     host: "/",
+            //     port: 9000,
+            //     path: "/peerjs",
+            //     key:"ajoss",
+            // });
+
+            // const peer = new Peer("someid", {
+            //     host: "/",
+            //     port: 9000,
+            //     path: "/peerjs"
+            // });
+
+            const peer = new Peer("someid1", {
+                host: "localhost",
+                port: 9000,
+                path: "/myapp",
+            });
+
+            // const peer = new Peer("someid", {
+            //     host: "/",
+            //     port: 4000,
+            //     path: "/peerjs",
+            //     key:"peaUser"
+            // });
+
+        
+            console.log("peer", peer);
+
+            // async function test (){
+            //     const  response = await fetch(`https://localhost:9000/sera`, {
+            //         method: 'GET',
+            //         credentials: "include",
+            //     });
+    
+            //     console.log('res',await response.json());
+            // }
+            // test();
+		</script>
+	</body>
+</html>
