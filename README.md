@@ -25,7 +25,7 @@ RI (Gestion de Réseau Informatique) is a comprehensive, full-stack platform tha
 - **🎥 Video Conferencing:** Built-in WebRTC video calls with screen sharing capabilities, supported by TURN server for NAT traversal.
 - **🔔 Unified Notifications:** Central notification center for network alerts and collaboration activities.
 
-### 🔐 **Dynamic Access Control System** *(Nouveau)*
+### 🔐 **Dynamic Access Control System**
 - **Modular Permission Framework:** Every feature (button, component, page, menu, module) is access-controlled.
 - **Group-Based Permissions:** Assign users to groups with predefined permission sets (Admin, Network Operator, Help Desk, Viewer).
 - **Granular Control:** Define permissions at multiple levels:
