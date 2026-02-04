@@ -187,7 +187,7 @@ GRI/
 ## Setup backend
 Clone the project
 ```bash
-git clone http://154.126.75.194:3219/armp/GRI_BACK.git
+git clone https://github.com/Sera2One/GRI-back.git
 ```
 Go to the project directory
 ```bash
